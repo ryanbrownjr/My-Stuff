@@ -1,0 +1,108 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61EDAC21
+P 3050 3950
+F 0 "J1" H 3150 3950 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3550 3850 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3050 3950 50  0001 C CNN
+F 3 "~" H 3050 3950 50  0001 C CNN
+	1    3050 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61EDB32D
+P 3450 3700
+F 0 "R1" V 3243 3700 50  0000 C CNN
+F 1 "R" V 3334 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1812_4532Metric" V 3380 3700 50  0001 C CNN
+F 3 "~" H 3450 3700 50  0001 C CNN
+	1    3450 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61EDBCFC
+P 3850 3700
+F 0 "R2" V 3643 3700 50  0000 C CNN
+F 1 "R" V 3734 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1812_4532Metric" V 3780 3700 50  0001 C CNN
+F 3 "~" H 3850 3700 50  0001 C CNN
+	1    3850 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61EDC117
+P 3650 3900
+F 0 "C1" H 3765 3946 50  0000 L CNN
+F 1 "C" H 3765 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 3688 3750 50  0001 C CNN
+F 3 "~" H 3650 3900 50  0001 C CNN
+	1    3650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 61EDC96A
+P 4050 3900
+F 0 "D1" V 4089 3782 50  0000 R CNN
+F 1 "LED" V 3998 3782 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 4050 3900 50  0001 C CNN
+F 3 "~" H 4050 3900 50  0001 C CNN
+	1    4050 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 3850 3250 3700
+Wire Wire Line
+	3250 3700 3300 3700
+Wire Wire Line
+	3600 3700 3650 3700
+Wire Wire Line
+	4000 3700 4050 3700
+Wire Wire Line
+	4050 3700 4050 3750
+Wire Wire Line
+	4050 4050 4050 4100
+Wire Wire Line
+	4050 4100 3650 4100
+Wire Wire Line
+	3250 4100 3250 3950
+Wire Wire Line
+	3650 3700 3650 3750
+Connection ~ 3650 3700
+Wire Wire Line
+	3650 3700 3700 3700
+Wire Wire Line
+	3650 4050 3650 4100
+Connection ~ 3650 4100
+Wire Wire Line
+	3650 4100 3250 4100
+$Comp
+L power:GND #PWR01
+U 1 1 61EDD628
+P 3650 4100
+F 0 "#PWR01" H 3650 3850 50  0001 C CNN
+F 1 "GND" H 3655 3927 50  0000 C CNN
+F 2 "" H 3650 4100 50  0001 C CNN
+F 3 "" H 3650 4100 50  0001 C CNN
+	1    3650 4100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

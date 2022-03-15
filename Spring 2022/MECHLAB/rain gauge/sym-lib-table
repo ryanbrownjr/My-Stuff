@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name SD)(type Legacy)(uri ${KIPRJMOD}/SD.lib)(options "")(descr ""))
+  (lib (name Battery)(type Legacy)(uri ${KIPRJMOD}/Battery.lib)(options "")(descr ""))
+  (lib (name transistor)(type Legacy)(uri ${KIPRJMOD}/transistor.lib)(options "")(descr ""))
+)

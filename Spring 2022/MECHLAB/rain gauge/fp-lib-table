@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name SDcard)(type KiCad)(uri ${KIPRJMOD}/SDcard.pretty)(options "")(descr ""))
+  (lib (name battery)(type KiCad)(uri ${KIPRJMOD}/battery.pretty)(options "")(descr ""))
+  (lib (name transistor)(type KiCad)(uri ${KIPRJMOD}/transistor.pretty)(options "")(descr ""))
+)
